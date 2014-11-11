@@ -1,4 +1,8 @@
 <%= form_tag do %>
   <%= text_area_tag :body %>
-  <button type="submit">Parse</button>
+  <%= submit_tag "Parse" %>
 <% end %>
+
+Spaces: <%= @counts[:spaces] %>
+<br/>
+Chars: <%= @counts[:chars] %>
