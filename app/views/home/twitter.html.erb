@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th>Screen Name</th>
+      <th>Text</th>
+      <th>Retweets</th>
+      <th>Favorites</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tweets.each do |tweet| %>
+      <tr>
+        <td><%= tweet.user.screen_name %></td>
+        <td><%= tweet.text %></td>
+        <td><%= tweet.retweet_count %></td>
+        <td><%= tweet.favorite_count %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

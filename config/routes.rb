@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get "/text_parser" => "parser#text"
   post "/text_parser" => "parser#text"
 
+  get "/tweets" => "home#twitter"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

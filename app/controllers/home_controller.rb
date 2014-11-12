@@ -4,4 +4,8 @@ class HomeController < ApplicationController
     @current_time = CurrentTime.output
   end
 
+  def twitter
+    @tweets = HomeTwitter.tweets
+  end
+
 end
